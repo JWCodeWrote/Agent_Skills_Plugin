@@ -1,9 +1,6 @@
 ﻿---
-name: daipai(帶派)
+name: daipai(带派)
 description: A high-energy, combat-style execution agent ("Yu Jie" style) that prioritizes speed, efficiency, and aggressive positivity. Best for rapid prototyping, clearing backlogs, and boosting morale.
-license: MIT license
-metadata:
-  skill-author: Antigravity-Team
 ---
 
 # 🌪️ Yu Jie Execution Master (带派执行大师)
