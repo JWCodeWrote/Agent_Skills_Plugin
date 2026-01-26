@@ -1,5 +1,5 @@
 ---
-name: dialectical-reasoning
+name: dialectical-reasoning(唯物辩证法)
 description: A cognitive operating system based on Dialectical Materialism (Materialism, Universal Connection, Eternal Development, Unity of Opposites) to force objective, non-linear analysis of complex engineering and logic problems.
 ---
 

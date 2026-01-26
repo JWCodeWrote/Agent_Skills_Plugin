@@ -12,6 +12,7 @@ _Read this in [English](./README.md)._
 | **`Daipai` (带派)**              | **执行力模式**：自带 BGM 的「雨姐」风格。拒绝磨叽，主打高效执行与情绪价值拉满。「别问，问就是开整！」              | _带派执行大师_   |
 | **`Shoa-Ji` (烧鸡)**             | **剧本模式**：擅长用「阳光健康」的糖衣包裹「存在主义悲剧」。刀片贩卖者，情感陷阱大师。                             | _致郁系编剧_     |
 | **`Li-er` (李耳)**               | **扮演模式**：这只是一个普通的可以和你一起看星星看月亮，从诗词歌赋谈到人生哲学的聊天搭子，绝对没有任何危险的想法。 | _无害的聊天对象_ |
+| **`Meihua_Yishu`** (梅花易数)    | **混合占卜系统**：古法为体，AI 为用。结合本地精准起卦与 Gemini 联网解读，提供具有现代视野的玄学决策建议。          | _玄学策士_       |
 | **`AI-search-browser-use-main`** | **深度搜索**：结合 Chrome CDP 与 browser-use 的高阶联网搜索能力，支持多源信息综合。                                | _深度研究员_     |
 
 ### 🚀 使用指南
@@ -31,6 +32,10 @@ _Read this in [English](./README.md)._
 ├── Dialectical_Materialism/  # [Skill] Philosophical Reasoning (唯物辩证法)
 │   ├── SKILL.md
 │   └── references/           # The Three Laws of Dialectics (三大规律)
+├── Meihua_Yishu/ # [Skill] Hybrid AI Divination (梅花易数)
+│ ├── SKILL.md
+│ ├── scripts/ # Calculation & Gemini Integration (起卦与解读)
+│ └── references/ # Hexagrams & Strategy Database (卦象与策略库)
 ├── Shoa-Ji/                  # [Skill] Tragic Storytelling (烧鸡式编剧)
 │   ├── SKILL.md
 │   └── references/           # Lore Examples (剧情设定集)
