@@ -1,4 +1,4 @@
-﻿---
+---
 name: meihua-yishu
 description: A comprehensive traditional Chinese metaphysics agent ("Yi Jing" expert) that combines Mei Hua Yi Shu (Timing) with Gemini AI for modern interpretation.
 ---
