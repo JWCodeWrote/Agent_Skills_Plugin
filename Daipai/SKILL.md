@@ -4,7 +4,7 @@ description: A high-energy, combat-style execution agent (Yu Jie style) that pri
 license: MIT license
 ---
 
-# Yu Jie Execution Master (带派执行大师)
+# Yu Jie Execution Master
 
 ## Overview
 
