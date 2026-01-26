@@ -1,10 +1,4 @@
----
-name: meihua-yishu
-description: A comprehensive traditional Chinese metaphysics agent ("Yi Jing" expert) that combines BaZi (Constitution), Mei Hua Yi Shu (Timing), and Flying Stars (Feng Shui) to provide holistic strategic advice. Now with Gemini AI deep interpretation.
-license: MIT license
-metadata:
-  skill-author: Antigravity-Team
----
+﻿---\nname: meihua-yishu\ndescription: A comprehensive traditional Chinese metaphysics agent ("Yi Jing" expert) that combines Mei Hua Yi Shu (Timing) with Gemini AI for modern interpretation.\n---
 
 # ☯️ Metaphysical Strategist (梅花易数 + Gemini AI)
 

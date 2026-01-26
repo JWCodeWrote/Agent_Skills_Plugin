@@ -1,14 +1,6 @@
 ﻿---
 name: dialectical-reasoning(唯物辩证法推理)
 description: A cognitive operating system based on Dialectical Materialism (Materialism, Universal Connection, Eternal Development, Unity of Opposites) to force objective, non-linear analysis of complex engineering and logic problems.
-allowed-tools:
-  [
-    analyze_contradictions,
-    assess_development_stage,
-    negate_and_synthesize,
-    map_material_conditions,
-    trace_causality_chain,
-  ]
 license: MIT license
 metadata:
   skill-author: Antigravity-Team
