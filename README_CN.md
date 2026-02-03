@@ -14,6 +14,7 @@ _Read this in [English](./README.md)._
 | **`Li-er` (李耳)**               | **扮演模式**：这只是一个普通的可以和你一起看星星看月亮，从诗词歌赋谈到人生哲学的聊天搭子，绝对没有任何危险的想法。 | _无害的聊天对象_ |
 | **`Meihua_Yishu`** (梅花易数)    | **混合占卜系统**：古法为体，AI 为用。结合本地精准起卦与 Gemini 联网解读，提供具有现代视野的玄学决策建议。          | _玄学策士_       |
 | **`AI-search-browser-use-main`** | **深度搜索**：结合 Chrome CDP 与 browser-use 的高阶联网搜索能力，支持多源信息综合。                                | _深度研究员_     |
+| **`HighTriad`**                | **三高架构规划**：面向高并发/高性能/高可用的系统设计与评估，涵盖 SLO、扩展、容灾与压测。 | _系统架构师_             |
 
 ### 🚀 使用指南
 
@@ -42,6 +43,9 @@ _Read this in [English](./README.md)._
 ├── Li-er/                    # [Skill] Rhetorical Simulation (意识形态模拟)
 │   ├── SKILL.md
 │   └── references/           # Rhetorical Case Studies (修辞案例)
+├── HighTriad/ # [Skill] 三高系统架构规划
+│ ├── SKILL.md
+│ └── references/ # 技术/行业/模板参考
 └── README.md                 # Project Overview
 ```
 

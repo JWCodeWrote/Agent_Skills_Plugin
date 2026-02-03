@@ -16,6 +16,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`Li-er` (李耳)**               | **Roleplay Mode**: An "Ideological Inquisitor" for adversarial simulation, debate training, and detecting manipulative rhetoric.              | _The Ideological Inquisitor_  |
 | **`Meihua_Yishu`** (梅花易数)    | **Hybrid Divination**: A strategic decision support system combining traditional I-Ching math with Gemini AI for deep, modern interpretation. | _Metaphysical Strategist_     |
 | **`AI-search-browser-use-main`** | **Research Mode**: Advanced web research capabilities using Chrome CDP and browser automation for deep synthesis.                             | _The Deep Researcher_         |
+| **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
 
 ### 🚀 How to Use
 
@@ -44,6 +45,9 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 ├── Li-er/ # [Skill] Rhetorical Simulation
 │ ├── SKILL.md
 │ └── references/ # Rhetorical Case Studies
+├── HighTriad/ # [Skill] Three-High Architecture (Concurrency/Performance/Availability)
+│ ├── SKILL.md
+│ └── references/ # Tech/Industry/Templates
 └── README.md # Project Overview
 ```
 
