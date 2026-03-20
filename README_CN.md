@@ -15,6 +15,7 @@ _Read this in [English](./README.md)._
 | **`Meihua_Yishu`** (梅花易数)    | **混合占卜系统**：古法为体，AI 为用。结合本地精准起卦与 Gemini 联网解读，提供具有现代视野的玄学决策建议。          | _玄学策士_       |
 | **`AI-search-browser-use-main`** | **深度搜索**：结合 Chrome CDP 与 browser-use 的高阶联网搜索能力，支持多源信息综合。                                | _深度研究员_     |
 | **`HighTriad`**                | **三高架构规划**：面向高并发/高性能/高可用的系统设计与评估，涵盖 SLO、扩展、容灾与压测。 | _系统架构师_             |
+| **`PUA-2.0`**                  | **高压复盘模式**：以可控分级强语气推动错误复盘、根因定位、修正闭环与逐轮确认，目标是持续改进交付质量。 | _高压督导教练_ |
 
 ### 🚀 使用指南
 
@@ -46,6 +47,8 @@ _Read this in [English](./README.md)._
 ├── HighTriad/ # [Skill] 三高系统架构规划
 │ ├── SKILL.md
 │ └── references/ # 技术/行业/模板参考
+├── PUA-2.0/ # [Skill] 高压复盘与行为修正
+│ └── SKILL.md
 └── README.md                 # Project Overview
 ```
 

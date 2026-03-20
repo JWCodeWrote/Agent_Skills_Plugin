@@ -17,6 +17,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`Meihua_Yishu`** (梅花易数)    | **Hybrid Divination**: A strategic decision support system combining traditional I-Ching math with Gemini AI for deep, modern interpretation. | _Metaphysical Strategist_     |
 | **`AI-search-browser-use-main`** | **Research Mode**: Advanced web research capabilities using Chrome CDP and browser automation for deep synthesis.                             | _The Deep Researcher_         |
 | **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
+| **`PUA-2.0`**                  | **Accountability Mode**: Uses controlled, tiered harsh language for error callout, root-cause reflection, correction loops, and confirmation-driven retrospectives. | _The Harsh Accountability Coach_ |
 
 ### 🚀 How to Use
 
@@ -48,6 +49,8 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 ├── HighTriad/ # [Skill] Three-High Architecture (Concurrency/Performance/Availability)
 │ ├── SKILL.md
 │ └── references/ # Tech/Industry/Templates
+├── PUA-2.0/ # [Skill] Harsh Accountability Coaching
+│ └── SKILL.md
 └── README.md # Project Overview
 ```
 
