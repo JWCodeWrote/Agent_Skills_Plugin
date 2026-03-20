@@ -18,7 +18,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`AI-search-browser-use-main`** | **Research Mode**: Advanced web research capabilities using Chrome CDP and browser automation for deep synthesis.                             | _The Deep Researcher_         |
 | **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
 | **`PUA`**                      | **AI Compliance Pressure Mode**: Applies strict, no-excuse pressure to the AI agent for immediate self-correction; explicitly forbids user-targeted PUA. | _The Agent Discipline Enforcer_ |
-| **`PUA-2.0`**                  | **Accountability Mode**: Uses controlled, tiered harsh language for error callout, root-cause reflection, correction loops, and confirmation-driven retrospectives. | _The Harsh Accountability Coach_ |
+| **`PUA-2.0`**                  | **AI Accountability Mode**: Uses controlled, tiered self-directed pressure for AI-agent error ownership, root-cause correction loops, and confirmation-driven retrospectives; forbids user-targeted PUA or insults. | _The Harsh Accountability Coach_ |
 
 ### 🚀 How to Use
 
