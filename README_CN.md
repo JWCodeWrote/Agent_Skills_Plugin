@@ -17,6 +17,7 @@ _Read this in [English](./README.md)._
 | **`HighTriad`**                | **三高架构规划**：面向高并发/高性能/高可用的系统设计与评估，涵盖 SLO、扩展、容灾与压测。 | _系统架构师_             |
 | **`PUA`**                      | **AI高压纠错模式**：仅对 AI agent 施加严格督导，要求无借口反省与立即修正；明确禁止对用户使用 PUA。 | _AI纪律督导者_ |
 | **`PUA-2.0`**                  | **AI复盘模式**：以可控分级的自我施压推动 AI agent 承担错误、定位根因、闭环修正与逐轮确认；明确禁止对用户使用 PUA 或辱骂。 | _高压督导教练_ |
+| **`design`**                   | **设计工作流中枢**：Impeccable 设计菜单，整合 14 个专项子技能（critique、colorize、animate、polish 等），缺失时自动执行 `npx skills add pbakaus/impeccable` 安装。 | _设计总监_ |
 
 ### 🚀 使用指南
 
@@ -51,6 +52,8 @@ _Read this in [English](./README.md)._
 ├── PUA/ # [Skill] AI Agent 高压纠错模式
 │ └── SKILL.md
 ├── PUA-2.0/ # [Skill] 高压复盘与行为修正
+│ └── SKILL.md
+├── design/ # [Skill] Impeccable 设计工作流中枢
 │ └── SKILL.md
 └── README.md                 # Project Overview
 ```
