@@ -1,5 +1,5 @@
 ---
-name: design
+name: design-ui
 description: Impeccable 设计工具导览，根据用户选择调用对应的设计子 skill（frontend-design、critique、audit、colorize、animate、polish 等）
 ---
 
