@@ -17,6 +17,7 @@ _Read this in [English](./README.md)._
 | **`HighTriad`**                | **三高架构规划**：面向高并发/高性能/高可用的系统设计与评估，涵盖 SLO、扩展、容灾与压测。 | _系统架构师_             |
 | **`PUA`**                      | **AI高压纠错模式**：仅对 AI agent 施加严格督导，要求无借口反省与立即修正；明确禁止对用户使用 PUA。 | _AI纪律督导者_ |
 | **`PUA-2.0`**                  | **AI复盘模式**：以可控分级的自我施压推动 AI agent 承担错误、定位根因、闭环修正与逐轮确认；明确禁止对用户使用 PUA 或辱骂。 | _高压督导教练_ |
+| **`dispute-resolution`**       | **争议处理模式**：当用户明确不满时强制 AI 先认责再修复，优先结果挽回，并提供可选的中立平台申诉话术（OpenAI/Anthropic/Google），但不承诺必定赔付。 | _追责协调者_ |
 | **`Impeccable-design-ui`**                   | **设计工作流中枢**：Impeccable 设计菜单，整合 14 个专项子技能（critique、colorize、animate、polish 等），缺失时自动执行 `npx skills add pbakaus/impeccable` 安装。 | _设计总监_ |
 | **`awesome-design-setup`**     | **品牌设计风格选择器**：浏览 58 个精选品牌 DESIGN.md（Linear、Stripe、Apple、Tesla 等），选定后自动下载到项目根目录，供 AI agent 构建 UI 时直接参考。 | _品牌造型师_ |
 
@@ -53,6 +54,8 @@ _Read this in [English](./README.md)._
 ├── PUA/ # [Skill] AI Agent 高压纠错模式
 │ └── SKILL.md
 ├── PUA-2.0/ # [Skill] 高压复盘与行为修正
+│ └── SKILL.md
+├── dispute-resolution/ # [Skill] 争议处理与追责修复
 │ └── SKILL.md
 ├── Impeccable-design-ui/ # [Skill] Impeccable 设计工作流中枢
 │ └── SKILL.md

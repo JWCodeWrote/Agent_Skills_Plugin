@@ -19,6 +19,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
 | **`PUA`**                      | **AI Compliance Pressure Mode**: Applies strict, no-excuse pressure to the AI agent for immediate self-correction; explicitly forbids user-targeted PUA. | _The Agent Discipline Enforcer_ |
 | **`PUA-2.0`**                  | **AI Accountability Mode**: Uses controlled, tiered self-directed pressure for AI-agent error ownership, root-cause correction loops, and confirmation-driven retrospectives; forbids user-targeted PUA or insults. | _The Harsh Accountability Coach_ |
+| **`dispute-resolution`**       | **Dispute Resolution Mode**: Forces immediate fault ownership when users are dissatisfied, prioritizes redo-first recovery, and provides optional provider-neutral complaint templates (OpenAI/Anthropic/Google) without promising guaranteed compensation. | _The Accountability Negotiator_ |
 | **`Impeccable-design-ui`**                   | **Design Workflow Hub**: An Impeccable design menu that routes to 14 specialized sub-skills (critique, colorize, animate, polish, etc.) with auto-install via `npx skills add pbakaus/impeccable`. | _The Design Director_ |
 | **`awesome-design-setup`**     | **Brand Design Picker**: Browse 58 curated brand DESIGN.md files (Linear, Stripe, Apple, Tesla, etc.) and download the chosen one to your project root for AI-agent-driven UI development.        | _The Brand Stylist_   |
 
@@ -55,6 +56,8 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 ├── PUA/ # [Skill] AI-Agent Under-Pressure Compliance Mode
 │ └── SKILL.md
 ├── PUA-2.0/ # [Skill] Harsh Accountability Coaching
+│ └── SKILL.md
+├── dispute-resolution/ # [Skill] Dispute Resolution and Recovery Accountability
 │ └── SKILL.md
 ├── Impeccable-design-ui/ # [Skill] Impeccable Design Workflow Hub
 │ └── SKILL.md
