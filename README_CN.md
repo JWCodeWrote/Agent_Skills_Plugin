@@ -14,6 +14,7 @@ _Read this in [English](./README.md)._
 | **`HighTriad`**                | **三高架构规划**：面向高并发/高性能/高可用的系统设计与评估，涵盖 SLO、扩展、容灾与压测。 | _系统架构师_             |
 | **`story-commentary-workflow`** | **剧情解说工作流**：整理游戏剧情素材、章节拆分、字幕转录、旁白草稿，并建立旁白与画面的对应关系。 | _剧情解说制作人_ |
 | **`story-worldbuilding-planner`** | **故事与世界观规划**：创建或打磨游戏剧情、网文/轻小说大纲、角色弧线、阵营设定、力量体系与 lore bible。 | _叙事设计师_ |
+| **`European-Chinese-Cleaner`** | **欧式中文清洗器**：将翻译腔、欧化语法、AI 腔和英文直译式中文改写成自然、地道、流畅的中式中文。 | _中文编辑_ |
 | **`PUA`**                      | **AI高压纠错模式**：仅对 AI agent 施加严格督导，要求无借口反省与立即修正；明确禁止对用户使用 PUA。 | _AI纪律督导者_ |
 | **`Impeccable-design-ui`**                   | **设计工作流中枢**：Impeccable 设计菜单，整合 14 个专项子技能（critique、colorize、animate、polish 等），缺失时自动执行 `npx skills add pbakaus/impeccable` 安装。 | _设计总监_ |
 | **`awesome-design-setup`**     | **品牌设计风格选择器**：浏览 58 个精选品牌 DESIGN.md（Linear、Stripe、Apple、Tesla 等），选定后自动下载到项目根目录，供 AI agent 构建 UI 时直接参考。 | _品牌造型师_ |
@@ -47,6 +48,8 @@ _Read this in [English](./README.md)._
 │ ├── SKILL.md
 │ └── references/ # 章节 schema、输出模板与工作流手册
 ├── story-worldbuilding-planner/ # [Skill] 故事与世界观规划
+│ └── SKILL.md
+├── European-Chinese-Cleaner/ # [Skill] 欧式中文清洗器
 │ └── SKILL.md
 ├── PUA/ # [Skill] AI Agent 高压纠错模式
 │ └── SKILL.md

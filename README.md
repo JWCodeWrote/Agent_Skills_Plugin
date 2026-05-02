@@ -16,6 +16,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
 | **`story-commentary-workflow`** | **Story Commentary Mode**: Organizes game story footage, chapter breakdowns, subtitles, narration drafts, and voiceover-to-visual mapping. | _The Story Commentary Producer_ |
 | **`story-worldbuilding-planner`** | **Worldbuilding Mode**: Creates and refines game stories, web novel plots, light novel arcs, characters, factions, power systems, and lore bibles. | _The Narrative Designer_ |
+| **`European-Chinese-Cleaner`** | **Chinese Rewrite Mode**: Rewrites translationese, Europeanized grammar, AI-generated stiffness, and English calques into natural Chinese. | _The Chinese Language Editor_ |
 | **`PUA`**                      | **AI Compliance Pressure Mode**: Applies strict, no-excuse pressure to the AI agent for immediate self-correction; explicitly forbids user-targeted PUA. | _The Agent Discipline Enforcer_ |
 | **`Impeccable-design-ui`**                   | **Design Workflow Hub**: An Impeccable design menu that routes to 14 specialized sub-skills (critique, colorize, animate, polish, etc.) with auto-install via `npx skills add pbakaus/impeccable`. | _The Design Director_ |
 | **`awesome-design-setup`**     | **Brand Design Picker**: Browse 58 curated brand DESIGN.md files (Linear, Stripe, Apple, Tesla, etc.) and download the chosen one to your project root for AI-agent-driven UI development.        | _The Brand Stylist_   |
@@ -49,6 +50,8 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 │ ├── SKILL.md
 │ └── references/ # Chapter schema, templates, and playbook
 ├── story-worldbuilding-planner/ # [Skill] Story and worldbuilding planner
+│ └── SKILL.md
+├── European-Chinese-Cleaner/ # [Skill] Translationese-to-native-Chinese rewrite
 │ └── SKILL.md
 ├── PUA/ # [Skill] AI-Agent Under-Pressure Compliance Mode
 │ └── SKILL.md
