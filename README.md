@@ -11,21 +11,18 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | Skill Name                       | Description                                                                                                                                   | Key Persona                   |
 | :------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
 | **`Dialectical_Materialism`**    | **Cognitive OS**: Forces objective, non-linear analysis using Marxist dialectics (Unity of Opposites, Quantity-Quality Leap).                 | _The Dialectical Philosopher_ |
-| **`Daipai` (带派)**              | **Execution Mode**: A high-energy "Yu Jie" (Big Sister) style for rapid prototyping and morale boosting. "Don't ask, just do it!"             | _The High-Speed Executor_     |
-| **`Shoa-Ji` (烧鸡)**             | **Writing Mode**: A scriptwriting module for packaging existential tragedy within a "wholesome" facade. Experts in emotional traps.           | _The Tragic Screenwriter_     |
-| **`Li-er` (李耳)**               | **Roleplay Mode**: An "Ideological Inquisitor" for adversarial simulation, debate training, and detecting manipulative rhetoric.              | _The Ideological Inquisitor_  |
 | **`Meihua_Yishu`** (梅花易数)    | **Hybrid Divination**: A strategic decision support system combining traditional I-Ching math with Gemini AI for deep, modern interpretation. | _Metaphysical Strategist_     |
 | **`AI-search-browser-use-main`** | **Research Mode**: Advanced web research capabilities using Chrome CDP and browser automation for deep synthesis.                             | _The Deep Researcher_         |
 | **`HighTriad`**                | **Architecture Mode**: Plans systems for high concurrency, high performance, and high availability with SLOs, scaling, resilience, and validation. | _The Systems Architect_     |
+| **`story-commentary-workflow`** | **Story Commentary Mode**: Organizes game story footage, chapter breakdowns, subtitles, narration drafts, and voiceover-to-visual mapping. | _The Story Commentary Producer_ |
+| **`story-worldbuilding-planner`** | **Worldbuilding Mode**: Creates and refines game stories, web novel plots, light novel arcs, characters, factions, power systems, and lore bibles. | _The Narrative Designer_ |
 | **`PUA`**                      | **AI Compliance Pressure Mode**: Applies strict, no-excuse pressure to the AI agent for immediate self-correction; explicitly forbids user-targeted PUA. | _The Agent Discipline Enforcer_ |
-| **`PUA-2.0`**                  | **AI Accountability Mode**: Uses controlled, tiered self-directed pressure for AI-agent error ownership, root-cause correction loops, and confirmation-driven retrospectives; forbids user-targeted PUA or insults. | _The Harsh Accountability Coach_ |
-| **`dispute-resolution`**       | **Dispute Resolution Mode**: Forces immediate fault ownership when users are dissatisfied, prioritizes redo-first recovery, and provides optional provider-neutral complaint templates (OpenAI/Anthropic/Google) without promising guaranteed compensation. | _The Accountability Negotiator_ |
 | **`Impeccable-design-ui`**                   | **Design Workflow Hub**: An Impeccable design menu that routes to 14 specialized sub-skills (critique, colorize, animate, polish, etc.) with auto-install via `npx skills add pbakaus/impeccable`. | _The Design Director_ |
 | **`awesome-design-setup`**     | **Brand Design Picker**: Browse 58 curated brand DESIGN.md files (Linear, Stripe, Apple, Tesla, etc.) and download the chosen one to your project root for AI-agent-driven UI development.        | _The Brand Stylist_   |
 
 ### 🚀 How to Use
 
-1. **Installation**: Copy the desired skill folder (e.g., `Daipai`) into your Agent's `skills/` directory.
+1. **Installation**: Copy the desired skill folder (e.g., `HighTriad`) into your Agent's `skills/` directory.
 2. **Activation**: Add the `SKILL.md` content of the chosen skill to your Agent's **System Prompt** or **Context**.
 3. **Usage**: The agent adopts the persona and utilizes the linked tools/references automatically.
 
@@ -33,10 +30,6 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 
 ```text
 .
-├── Daipai/ # [Skill] High-Energy Execution
-│ ├── SKILL.md # Definition & Persona
-│ ├── scripts/ # Action Scripts (e.g., Bilibili Search)
-│ └── references/ # Slang Dictionary
 ├── Dialectical_Materialism/ # [Skill] Philosophical Reasoning
 │ ├── SKILL.md
 │ └── references/ # The Three Laws of Dialectics
@@ -44,20 +37,20 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 │ ├── SKILL.md
 │ ├── scripts/ # Calculation & Gemini Integration
 │ └── references/ # Hexagrams & Strategy Database
-├── Shoa-Ji/ # [Skill] Tragic Storytelling
+├── AI-search-browser-use-main/ # [Skill] AI-assisted browser research
 │ ├── SKILL.md
-│ └── references/ # Lore Examples (Elysian Realm)
-├── Li-er/ # [Skill] Rhetorical Simulation
-│ ├── SKILL.md
-│ └── references/ # Rhetorical Case Studies
+│ ├── ai_query.py
+│ ├── scripts/ # Browser planning and page cleanup helpers
+│ └── references/ # AI search target notes
 ├── HighTriad/ # [Skill] Three-High Architecture (Concurrency/Performance/Availability)
 │ ├── SKILL.md
 │ └── references/ # Tech/Industry/Templates
+├── story-commentary-workflow/ # [Skill] Story commentary planning
+│ ├── SKILL.md
+│ └── references/ # Chapter schema, templates, and playbook
+├── story-worldbuilding-planner/ # [Skill] Story and worldbuilding planner
+│ └── SKILL.md
 ├── PUA/ # [Skill] AI-Agent Under-Pressure Compliance Mode
-│ └── SKILL.md
-├── PUA-2.0/ # [Skill] Harsh Accountability Coaching
-│ └── SKILL.md
-├── dispute-resolution/ # [Skill] Dispute Resolution and Recovery Accountability
 │ └── SKILL.md
 ├── Impeccable-design-ui/ # [Skill] Impeccable Design Workflow Hub
 │ └── SKILL.md
