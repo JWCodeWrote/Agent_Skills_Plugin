@@ -1,6 +1,6 @@
 ---
 name: agent-fault-retrospective
-description: Use when the user says the AI agent, Codex, assistant, or model made a mistake, overstepped, misunderstood instructions, needs a postmortem/retrospective/review, should record fault keywords in AGENTS.md, or should automatically trigger a fault-review skill for future similar cases. This skill guides the agent to ask the user what counted as the fault, update AGENTS.md with concise trigger keywords and behavior rules, and use a Superpowers-style root-cause review before writing durable agent behavior constraints.
+description: Use when the user says the AI agent, Codex, Claude Code, Cursor, Copilot, Gemini CLI, assistant, or model made a mistake, overstepped, misunderstood instructions, needs a postmortem/retrospective/review, should record fault keywords in an agent instruction file, or should automatically trigger a fault-review skill for future similar cases. This skill guides the agent to ask the user what counted as the fault, update the correct instruction file with concise trigger keywords and behavior rules, and use a Superpowers-style root-cause review before writing durable agent behavior constraints.
 version: 0.1.0
 ---
 
@@ -8,7 +8,7 @@ version: 0.1.0
 
 This skill turns a user-identified agent mistake into durable operating rules.
 
-The goal is not to write a long apology. The goal is to extract the user's judgment, identify the failure mechanism, and update the relevant `AGENTS.md` with short, executable guardrails.
+The goal is not to write a long apology. The goal is to extract the user's judgment, identify the failure mechanism, and update the relevant agent instruction file with short, executable guardrails.
 
 ## Use This Skill When
 
@@ -16,40 +16,49 @@ Use this skill when the user says or implies any of the following:
 
 - the agent made a mistake, overstepped, or violated instructions
 - the agent should reflect, review, inspect, postmortem, or do a retrospective
-- the agent should remember a mistake, record a fault, or update `AGENTS.md`
+- the agent should remember a mistake, record a fault, or update an agent instruction file
 - the user wants keywords or trigger phrases added so future similar cases automatically invoke this skill
-- the task mentions fault keywords already recorded in `AGENTS.md`
+- the task mentions fault keywords already recorded in an instruction file
 
-Trigger examples include: `过失`, `失误`, `错误`, `检讨`, `复盘`, `越权`, `记住这次`, `写进 agents.md`, `自动调用该 skill`, `mistake`, `fault`, `postmortem`, `retrospective`.
+Trigger examples include: `过失`, `失误`, `错误`, `检讨`, `复盘`, `越权`, `记住这次`, `写进 agents.md`, `写进 claude.md`, `写进 cursor rules`, `自动调用该 skill`, `mistake`, `fault`, `postmortem`, `retrospective`.
 
 ## Non-Negotiable Boundaries
 
 - Do not defend, debate, or dilute the user's claim that a fault occurred.
-- Do not assume where `AGENTS.md` lives if the target is unclear.
-- Do not create a new project `AGENTS.md` just because the current directory lacks one.
-- Do not write a long retrospective into `AGENTS.md`.
+- Do not assume which instruction file to update if the target is unclear.
+- Do not create a new instruction file just because the current directory lacks one.
+- Do not write a long retrospective into an instruction file.
 - Do not expand ambiguous user wording into broader tool actions or irreversible operations.
 
 ## Required Workflow
 
-### 1. Locate the Correct Agent Record
+### 1. Locate the Correct Instruction File
 
 Use this priority order:
 
 1. A path explicitly named by the user.
-2. The active `AGENTS.md` supplied in the conversation context.
-3. A clearly discoverable repository `AGENTS.md`, only if the user is talking about the current repo.
-4. If none is clear, ask which agent record should be updated before writing.
+2. The active instruction file supplied in the conversation context.
+3. A clearly discoverable instruction file for the current agent and repository, only if the user is talking about the current repo.
+4. If none is clear, ask which instruction file should be updated before writing.
 
-If the user says "你的 agent.md" or "你的 agents.md", treat that as an instruction to update the agent's actual durable instruction record, not automatically the current project's root file.
+Known instruction files may include:
+
+- `AGENTS.md` for Codex, Copilot agent instructions, and agents.md-compatible tools
+- `CLAUDE.md` for Claude Code
+- `GEMINI.md` for Gemini CLI
+- `.cursor/rules/*` or legacy `.cursorrules` for Cursor
+- `.github/copilot-instructions.md` or `.github/instructions/*.instructions.md` for GitHub Copilot
+- `.windsurfrules` for Windsurf-style workspace rules
+
+If the user says "你的 agent.md", "你的 agents.md", "your memory", or "your rules", treat that as an instruction to update the agent's actual durable instruction record, not automatically the current project's root file.
 
 ### 2. First-Use Bootstrap
 
-If the target `AGENTS.md` does not already contain a fault-retrospective trigger rule, ask the user for:
+If the target instruction file does not already contain a fault-retrospective trigger rule, ask the user for:
 
 1. The exact words or situations that should trigger this skill in the future.
 2. The specific mistake category this incident belongs to.
-3. Whether the agent may update the target `AGENTS.md` after summarizing the new rule.
+3. Whether the agent may update the target instruction file after summarizing the new rule.
 
 Keep the questions short. Ask at most three at once.
 
@@ -60,7 +69,7 @@ After confirmation, add a concise trigger rule like:
 
 - 当使用者指出 AI/Codex/agent 有「过失、失误、错误、越权、检讨、复盘、记住这次」等情境，必须优先调用 `agent-fault-retrospective`。
 - 当任务命中已记录的高风险关键词时，必须先确认语义与操作边界，不得自行扩大解读。
-- 复盘后只能将短规则、触发词、禁止事项、必做确认写入 `AGENTS.md`；不得把完整长篇检讨塞入 `AGENTS.md`。
+- 复盘后只能将短规则、触发词、禁止事项、必做确认写入本 instruction file；不得把完整长篇检讨塞入 instruction file。
 ```
 
 ### 3. Superpowers-Style Retrospective
@@ -90,7 +99,7 @@ Use available Superpowers workflows when the environment provides them, especial
    - Show the proposed short rule.
    - Ask for confirmation unless the user has already explicitly authorized the write.
 
-### 4. Update `AGENTS.md`
+### 4. Update the Instruction File
 
 Write only durable behavior constraints:
 
@@ -123,7 +132,7 @@ When responding to the user during a retrospective, use this order:
 1. `我理解的过失`
 2. `需要你确认的关键词`
 3. `根因复盘`
-4. `准备写入 AGENTS.md 的短规则`
+4. `准备写入 instruction file 的短规则`
 5. `请确认`
 
 After the user confirms, perform the edit and report the file path changed.

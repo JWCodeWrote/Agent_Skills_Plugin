@@ -18,7 +18,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`story-worldbuilding-planner`** | **Worldbuilding Mode**: Creates and refines game stories, web novel plots, light novel arcs, characters, factions, power systems, and lore bibles. | _The Narrative Designer_ |
 | **`European-Chinese-Cleaner`** | **Chinese Rewrite Mode**: Rewrites translationese, Europeanized grammar, AI-generated stiffness, and English calques into natural Chinese. | _The Chinese Language Editor_ |
 | **`PUA`**                      | **AI Compliance Pressure Mode**: Applies strict, no-excuse pressure to the AI agent for immediate self-correction; explicitly forbids user-targeted PUA. | _The Agent Discipline Enforcer_ |
-| **`agent-fault-retrospective`** | **Agent Fault Retrospective**: When the user flags an AI/Codex/agent mistake, overstep, or misunderstanding, asks for user-defined trigger keywords, applies a Superpowers-style root-cause review, and records concise behavior rules in AGENTS.md. | _The Fault Retrospective Officer_ |
+| **`agent-fault-retrospective`** | **Agent Fault Retrospective**: When the user flags an AI agent mistake, overstep, or misunderstanding, asks for user-defined trigger keywords, applies a Superpowers-style root-cause review, and records concise behavior rules in the correct instruction file (`AGENTS.md`, `CLAUDE.md`, Cursor rules, Copilot instructions, etc.). | _The Fault Retrospective Officer_ |
 | **`Impeccable-design-ui`**                   | **Design Workflow Hub**: An Impeccable design menu that routes to 14 specialized sub-skills (critique, colorize, animate, polish, etc.) with auto-install via `npx skills add pbakaus/impeccable`. | _The Design Director_ |
 | **`awesome-design-setup`**     | **Brand Design Picker**: Browse 58 curated brand DESIGN.md files (Linear, Stripe, Apple, Tesla, etc.) and download the chosen one to your project root for AI-agent-driven UI development.        | _The Brand Stylist_   |
 
@@ -56,7 +56,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 │ └── SKILL.md
 ├── PUA/ # [Skill] AI-Agent Under-Pressure Compliance Mode
 │ └── SKILL.md
-├── agent-fault-retrospective/ # [Skill] Agent fault retrospective and AGENTS.md guardrails
+├── agent-fault-retrospective/ # [Skill] Agent fault retrospective and instruction-file guardrails
 │ └── SKILL.md
 ├── Impeccable-design-ui/ # [Skill] Impeccable Design Workflow Hub
 │ └── SKILL.md

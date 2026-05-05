@@ -16,7 +16,7 @@ _Read this in [English](./README.md)._
 | **`story-worldbuilding-planner`** | **故事与世界观规划**：创建或打磨游戏剧情、网文/轻小说大纲、角色弧线、阵营设定、力量体系与 lore bible。 | _叙事设计师_ |
 | **`European-Chinese-Cleaner`** | **欧式中文清洗器**：将翻译腔、欧化语法、AI 腔和英文直译式中文改写成自然、地道、流畅的中式中文。 | _中文编辑_ |
 | **`PUA`**                      | **AI高压纠错模式**：仅对 AI agent 施加严格督导，要求无借口反省与立即修正；明确禁止对用户使用 PUA。 | _AI纪律督导者_ |
-| **`agent-fault-retrospective`** | **过失复盘记忆**：当用户指出 AI/Codex/agent 有过失、越权或误解时，询问用户认定的关键字，用 Superpowers 式根因流程复盘，并把短规则写入 AGENTS.md。 | _过失复盘官_ |
+| **`agent-fault-retrospective`** | **过失复盘记忆**：当用户指出 AI agent 有过失、越权或误解时，询问用户认定的关键字，用 Superpowers 式根因流程复盘，并把短规则写入正确的 instruction file（如 `AGENTS.md`、`CLAUDE.md`、Cursor rules、Copilot instructions 等）。 | _过失复盘官_ |
 | **`Impeccable-design-ui`**                   | **设计工作流中枢**：Impeccable 设计菜单，整合 14 个专项子技能（critique、colorize、animate、polish 等），缺失时自动执行 `npx skills add pbakaus/impeccable` 安装。 | _设计总监_ |
 | **`awesome-design-setup`**     | **品牌设计风格选择器**：浏览 58 个精选品牌 DESIGN.md（Linear、Stripe、Apple、Tesla 等），选定后自动下载到项目根目录，供 AI agent 构建 UI 时直接参考。 | _品牌造型师_ |
 
@@ -54,7 +54,7 @@ _Read this in [English](./README.md)._
 │ └── SKILL.md
 ├── PUA/ # [Skill] AI Agent 高压纠错模式
 │ └── SKILL.md
-├── agent-fault-retrospective/ # [Skill] AI 过失复盘与 AGENTS.md 短规则沉淀
+├── agent-fault-retrospective/ # [Skill] AI 过失复盘与 instruction file 短规则沉淀
 │ └── SKILL.md
 ├── Impeccable-design-ui/ # [Skill] Impeccable 设计工作流中枢
 │ └── SKILL.md
