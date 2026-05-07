@@ -21,6 +21,7 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 | **`agent-fault-retrospective`** | **Agent Fault Retrospective**: When the user flags an AI agent mistake, overstep, or misunderstanding, asks for user-defined trigger keywords, applies a Superpowers-style root-cause review, and records concise behavior rules in the correct instruction file (`AGENTS.md`, `CLAUDE.md`, Cursor rules, Copilot instructions, etc.). | _The Fault Retrospective Officer_ |
 | **`Impeccable-design-ui`**                   | **Design Workflow Hub**: An Impeccable design menu that routes to 14 specialized sub-skills (critique, colorize, animate, polish, etc.) with auto-install via `npx skills add pbakaus/impeccable`. | _The Design Director_ |
 | **`awesome-design-setup`**     | **Brand Design Picker**: Browse 58 curated brand DESIGN.md files (Linear, Stripe, Apple, Tesla, etc.) and download the chosen one to your project root for AI-agent-driven UI development.        | _The Brand Stylist_   |
+| **`frontend-imagegen-director`** | **Front-end Visual Concept Director**: Inspects the project's existing style and product nature, then uses built-in `imagegen` to create page comps, component reference images, or style explorations. If helper skills such as `superpowers` are missing, it falls back to manual requirement clarification and prompt planning. | _The Front-end Visual Director_ |
 
 ### 🚀 How to Use
 
@@ -64,6 +65,8 @@ Instead of simple Python tools, these skills provide **Mental Operating Systems*
 │ ├── SKILL.md
 │ ├── references/ # Brand catalog with path keys
 │ └── scripts/ # fetch_design.sh download helper
+├── frontend-imagegen-director/ # [Skill] Generate front-end visual references from project style
+│ └── SKILL.md
 └── README.md # Project Overview
 ```
 
