@@ -11,8 +11,9 @@ Its default workflow is:
 
 1. inspect the current project's style and product nature
 2. clarify the user's page requirements in a Superpowers-style flow
-3. generate a front-end concept image with `gpt-image2` or the environment's image generation path
-4. use that image as the visual contract for the actual front-end implementation
+3. confirm the extracted requirements before image generation
+4. generate a front-end concept image with `gpt-image2` or the environment's image generation path
+5. use that image as the visual contract for the actual front-end implementation
 
 If the user explicitly asks for image-only output, you may stop after the image stage.
 Otherwise, do not stop at the image.
@@ -60,7 +61,24 @@ If it does not exist, ask only the minimum needed questions:
 When the user is already specific, do not re-ask what was already answered.
 Instead, restate the extracted brief and move on.
 
-### 2. Inspect Project Style Before Generating
+### 2. Confirm the Requirement Brief Before Generating
+
+Before generating any image, present the extracted brief back to the user in a compact confirmation block.
+
+That confirmation must cover:
+
+- what page, flow, or screen will be built
+- target users and product type
+- desktop, mobile, or both
+- the intended visual direction
+- required brand constraints, copy language, and avoided styles
+
+If the user already gave all of this clearly, do not ask broad new questions.
+Still restate the brief and wait for confirmation before generating the image.
+
+Do not generate the front-end image until this confirmation step is complete, unless the user explicitly says to proceed without confirmation.
+
+### 3. Inspect Project Style Before Generating
 
 Check the repo for project signals such as:
 
@@ -78,7 +96,7 @@ Summarize the result in 3 buckets:
 
 Do not skip this unless the user explicitly wants a fresh direction unrelated to the repo.
 
-### 3. Choose the Visual Direction
+### 4. Choose the Visual Direction
 
 Pick one mode:
 
@@ -88,7 +106,7 @@ Pick one mode:
 
 If the user did not specify a mode, choose the closest fit and say which one you chose.
 
-### 4. Build the Image Generation Brief
+### 5. Build the Image Generation Brief
 
 Every image prompt must include:
 
@@ -105,7 +123,7 @@ Every image prompt must include:
 
 If the project is Chinese-first, the default UI copy in the generated image must also be Chinese unless the user asks for another language.
 
-### 5. Generate the Front-End Image
+### 6. Generate the Front-End Image
 
 Use `gpt-image2` / `gpt-image-2` when available.
 
@@ -120,7 +138,9 @@ Generate one of these:
 
 State which one you are generating before you generate it.
 
-### 6. Review the Image Before Coding
+Unless image generation capability is unavailable, generating the front-end image is mandatory before front-end implementation.
+
+### 7. Review the Image Before Coding
 
 Review the generated image against these checks:
 
@@ -135,7 +155,7 @@ Iterate with targeted prompt changes instead of full restarts when possible.
 
 If the user asked for image-first confirmation, do not start coding until the image direction is accepted.
 
-### 7. Build the Actual Front-End From the Approved Image
+### 8. Build the Actual Front-End From the Approved Image
 
 After the image is approved, implement the real front-end page from it.
 
@@ -150,7 +170,7 @@ Implementation should preserve:
 The image is a design contract, not a loose inspiration board.
 Do not jump straight into code before this stage when the user asked for image-first workflow.
 
-### 8. Validate Implementation Against the Image
+### 9. Validate Implementation Against the Image
 
 Before finishing, compare the built page against the approved image and report:
 
@@ -172,6 +192,7 @@ For each final run, report:
 ## Guardrails
 
 - Do not skip the image stage and jump straight into code when the user asked to generate a front-end visual first.
+- Do not generate the front-end image before the extracted requirement brief has been restated and confirmed, unless the user explicitly waived confirmation.
 - Do not stop at image delivery when the user asked to build the page from that image.
 - Do not default to English UI copy when the user is working in Chinese, unless the user asks for English.
 - Do not claim `superpowers` was used unless it was actually available and invoked.
