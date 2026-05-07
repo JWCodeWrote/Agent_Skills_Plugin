@@ -19,7 +19,7 @@ _Read this in [English](./README.md)._
 | **`agent-fault-retrospective`** | **过失复盘记忆**：当用户指出 AI agent 有过失、越权或误解时，询问用户认定的关键字，用 Superpowers 式根因流程复盘，并把短规则写入正确的 instruction file（如 `AGENTS.md`、`CLAUDE.md`、Cursor rules、Copilot instructions 等）。 | _过失复盘官_ |
 | **`Impeccable-design-ui`**                   | **设计工作流中枢**：Impeccable 设计菜单，整合 14 个专项子技能（critique、colorize、animate、polish 等），缺失时自动执行 `npx skills add pbakaus/impeccable` 安装。 | _设计总监_ |
 | **`awesome-design-setup`**     | **品牌设计风格选择器**：浏览 58 个精选品牌 DESIGN.md（Linear、Stripe、Apple、Tesla 等），选定后自动下载到项目根目录，供 AI agent 构建 UI 时直接参考。 | _品牌造型师_ |
-| **`frontend-imagegen-director`** | **前端视觉概念图导演**：先核对项目现有风格与产品属性，再用内建 `imagegen` 生成页面概念图、组件参考图或风格探索图；若缺少 `superpowers` 等辅助 skill，则退化为手动需求澄清与 prompt 规划。 | _前端视觉导演_ |
+| **`frontend-imagegen-director`** | **前端图到实现导演**：先核对项目现有风格与产品属性，用 `superpowers` 澄清用户需求，再用 `gpt-image2` 或环境提供的 `imagegen` 生成前端视觉图，最后依据确认后的图实现真实前端页面；若 `superpowers` 缺失，必须明确说明退化流程，不得假装已使用。 | _前端视觉导演_ |
 
 ### 🚀 使用指南
 
@@ -63,7 +63,7 @@ _Read this in [English](./README.md)._
 │ ├── SKILL.md
 │ ├── references/ # 品牌目录与路径键
 │ └── scripts/ # fetch_design.sh 下载辅助脚本
-├── frontend-imagegen-director/ # [Skill] 依项目风格生成前端视觉参考图
+├── frontend-imagegen-director/ # [Skill] 依项目风格生成前端视觉图，并根据确认后的图片实现页面
 │ └── SKILL.md
 └── README.md                 # Project Overview
 ```
